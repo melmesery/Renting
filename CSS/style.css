@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+:root {
+    --styleDark: #242325;
+    --styleGreen: #61e786;
+    --styleWhite: #fff;
+    --styleGray: #eeeeee;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--styleWhite);
+    color: var(--styleDark);
+}
+
+.title-underline {
+    width: 12rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 2rem;
+}
+
+.title-underline-center {
+    width: 50%;
+    height: 0.6rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--styleGreen);
+    border-radius: 1rem;
+}
+
+.blockquote {
+    border-left: 0.5rem solid var(--styleGreen);
+}
+
+
+
+.img-container {
+    position: relative;
+}
+
+.featured-icons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.featured-icon-left {
+    background: var(--styleDark);
+    padding: 0.5rem;
+    display: inline-block;
+    color: var(--styleWhite);
+}
+
+.featured-icon-right {
+    background: var(--styleGreen);
+    padding: 0.5rem;
+    display: inline-block;
+    color: var(--styleWhite);
+}
+
+/*featured section*/
+
+.featured {
+    background: var(--styleGray);
+}
+
+/*contact section*/
+
+.contact {
+    background: var(--styleGreen);
+    color: var(--styleWhite);
+}
+
+.contact-btn {
+    background: transparent;
+    border: 0.1rem solid var(--styleWhite);
+    color: var(--styleWhite);
+}
+
+.contact-btn:hover {
+    background: var(--styleWhite);
+    color: var(--styleGreen);
+}
+
+/* services section */
+
+.services,
+.tour {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/bannerBcg.jpeg) center/cover fixed no-repeat;
+}
+
+.services-info-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--styleGreen);
+    color: var(--styleWhite) !important;
+    margin-bottom: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.services-info-text:hover {
+    color: var(--styleDark) !important;
+    text-decoration: none;
+}
+
+.service-icon {
+    font-size: 2rem;
+    color: var(--styleGreen);
+    padding: 0.5rem;
+    border: 0.1rem solid var(--styleGreen);
+    margin-right: 1rem;
+    transition: all 1s ease-in-out;
+}
+
+.service-icon:hover {
+    background: var(--styleGreen);
+    color: var(--styleGrey);
+}
+
+.service-link:hover {
+    color: var(--styleWhite);
+}
+
+/* gallery section */
+
+.gallery-btn {
+    background: var(--styleGray);
+}
+
+.gallery-btn:hover {
+    background: var(--styleGreen);
+    color: var(--styleWhite);
+}
+
+.gallery-image-container {
+    position: relative;
+    transition: all 1s linear;
+    overflow: hidden;
+}
+
+.gallery-image-container:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.gallery-image {
+    transition: all 1s linear;
+}
+
+.gallery-image-container:hover .gallery-image {
+    opacity: 0.3;
+}
+
+.gallery-info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    padding: 0.5rem;
+    background: var(--styleGreen);
+    color: var(--styleWhite);
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.gallery-info:hover {
+    text-decoration: none;
+    color: var(--styleDark);
+}
+
+.gallery-image-container:hover .gallery-info {
+    transform: translate(-50%, 0);
+}
+
+.gallery-icon {
+    position: absolute;
+    color: var(--styleWhite);
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.gallery-image-container:hover .gallery-icon {
+    opacity: 1;
+}
+
+/* tour */
+
+.tour-icon {
+    color: var(--styleGreen);
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: var(--styleWhite);
+    border-radius: 30%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.tour-icon:hover {
+    background: var(--styleGreen);
+    color: var(--styleWhite);
+}
+
+.footer-section {
+    background: var(--styleDark);
+}
+
+/* global*/
+
+.text-green {
+    color: var(--styleGreen);
+}
+
+.green-btn {
+    color: var(--styleGreen);
+    border: 0.1rem solid var(--styleGreen);
+    background: transparent;
+}
+
+.green-btn:hover {
+    background: var(--styleGreen);
+    color: var(--styleWhite);
+}
+
+.phone-icon {
+    color: var(--styleGreen);
+    border: 0.1rem solid var(--styleGreen);
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+}
+
+.navbar {
+    background: var(--styleDark) !important;
+}
+
+/*banner*/
+.banner-info {
+    min-height: calc(100vh - 101px);
+    background: var(--styleGray);
+    position: relative;
+}
+
+.banner-img {
+    min-height: calc(100vh - 101px);
+    background: url(../Images/bannerBcg.jpeg) center/cover no-repeat;
+    position: relative;
+}
+
+.banner-info__footer {
+    background: var(--styleGreen);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.banner-img__footer {
+    background: var(--styleDark);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 104px;
+    display: flex;
+    align-items: center;
+}
+
+/*banner end*/
